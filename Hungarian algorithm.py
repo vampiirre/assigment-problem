@@ -65,6 +65,7 @@ while(I.min() == -1):
         Z[:,J2 == 1] += m
         Z[I2 == 1,:] += m
 Answer = np.zeros((n*n), dtype=int).reshape(n, n)
+print('Matrix of selected elements:')
 for el, i in enumerate(I):
     Answer[el][i] = 1
 print(Answer)
